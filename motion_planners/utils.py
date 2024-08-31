@@ -9,9 +9,9 @@ import numpy as np
 
 INF = float('inf')
 
-RRT_ITERATIONS = 20
-RRT_RESTARTS = 2
-RRT_SMOOTHING = 20
+RRT_ITERATIONS = 40# 40 20
+RRT_RESTARTS = 20 # 2
+RRT_SMOOTHING = 20 #20
 
 
 try:
@@ -31,7 +31,6 @@ def irange(start, stop=None, step=1):  # np.arange
 
 def negate(test):
     return lambda *args, **kwargs: not test(*args, **kwargs)
-
 
 def argmin(function, sequence):
     # TODO: use min
